@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "product": "tsx apps/product-service/src/server.ts",
-    "order": "tsx apps/order-service/src/server.ts"
+    "order": "tsx apps/order-service/src/server.ts",
+    "gateway": "tsx --env-file=apps/api-gateway/.env apps/api-gateway/src/server.ts"
   },
   "keywords": [],
   "author": "",
