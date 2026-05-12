@@ -8,13 +8,17 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "product": "tsx apps/product-service/src/server.ts",
+    "order": "tsx apps/order-service/src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@types/node": "^25.7.0",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.3"
   }
 }
