@@ -1,5 +1,7 @@
 import Fastify from 'fastify';
 import { OrderController } from './controllers/order.controller';
+import 'dotenv/config';
+
 
 const app = Fastify({ logger: true });
 const orderController = new OrderController();

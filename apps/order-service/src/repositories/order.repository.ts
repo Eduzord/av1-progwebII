@@ -7,8 +7,7 @@ export class OrderRepository {
   async create(orderData: Omit<Order, 'id' | 'createdAt'>): Promise<Order> {
     const newOrder: Order = {
       id: nextId++,
-      productId: orderData.productId,
-      quantity: orderData.quantity,
+      ...orderData,
       createdAt: new Date().toISOString()
     };
     
